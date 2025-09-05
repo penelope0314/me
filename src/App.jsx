@@ -6,11 +6,11 @@ import Photography from './Pages/photography'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/me">
       <Header />
       <Routes>
-        <Route path="/me/portfolio" element={<Portfolio />} />
-        <Route path="/me/photography" element={<Photography />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/photography" element={<Photography />} />
       </Routes>
     </BrowserRouter>
   )
