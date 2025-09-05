@@ -10,7 +10,7 @@ export default function Portfolio() {
                     <h3 className='mt-[1vw]'>Web Design</h3>
                 </div>
                 <div className='portfolio_item'>
-                    <a href="/#/photography"></a>
+                    <a href="#"></a>
                     <h3 className='mb-[1vw]'>Photography</h3>
                     <div className='aspect-3/4 bg-radial-[circle,rgba(255,255,247,1)_0%,rgba(220,220,220,1)_100%]'></div>
                 </div>
