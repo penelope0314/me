@@ -4,7 +4,7 @@ const imageList = Object.values(images).map((mod) => mod.default)
 export default function Photography() {
     return (
         <>
-            <h2 className="text-center m-[7vw_0vw_2vw]"><span className="text-[4vw] md:text-[3vw] lg:text-[2.5vw] xl:text-[2vw]">OOTD</span></h2>
+            <h2 className="text-center m-[7vw_0vw_3vw]"><span className="text-[4vw] md:text-[3vw] lg:text-[2.5vw] xl:text-[2vw]">OOTD</span></h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-[2vw_4vw] gap-[3vw] sm:gap-[2vw]">
                 {imageList.map((src, index) => (
                     <img key={index} src={src} alt={`圖片 ${index}`} className="rounded shadow-md" />
