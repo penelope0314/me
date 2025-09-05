@@ -6,7 +6,7 @@ const Navbar = () => {
                 <h1><span className='text-[3.5vw]'>Penelope</span></h1>
                 <ul className='flex flex-row gap-[2vw] text-[1.7vw]'>
                     <li><a href="#" className='nav_link'>About</a></li>
-                    <li><a href="/portfolio" className='nav_link'>Portfolio</a></li>
+                    <li><a href="#/portfolio" className='nav_link'>Portfolio</a></li>
                 </ul>
             </div>
             <div className='mt-[6vw]'></div>
