@@ -28,6 +28,7 @@
 }
 .portfolio_item{
   position: relative;
+  display: flex;
 }
 .portfolio_item div{
   border-radius: 1vw;
