@@ -8,7 +8,7 @@ export default function Photography() {
             <PageTitle text="OOTD" />
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-[2vw_4vw] gap-[3vw] sm:gap-[2vw]">
                 {imageList.map((src, index) => (
-                    <img key={index} src={src} alt={`圖片 ${index}`} />
+                    <img key={index} src={src} alt={`圖片 ${index}`} loading="lazy" />
                 ))} 
             </div>
         </>

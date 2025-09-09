@@ -10,5 +10,6 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  base: "/me/"
+  // base: "/me/"
+  base: "./"
 })
