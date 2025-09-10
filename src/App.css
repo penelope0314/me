@@ -12,7 +12,7 @@
 .nav_link:hover{
   color: black;
 }
-.nav_link::after{
+#pc_navbar .nav_link::after{
   content: '';
   position: absolute;
   bottom: 0;
