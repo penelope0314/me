@@ -12,7 +12,7 @@ export default function Photography() {
                     setTimeout(() => {
                         entry.target.classList.add("show");
                     }, delay);
-                    observer.unobserve(entry.target);
+                    // observer.unobserve(entry.target);
                 } else {
                     entry.target.classList.remove("show")
                 }
