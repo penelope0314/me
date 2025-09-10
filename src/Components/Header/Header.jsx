@@ -2,16 +2,18 @@ import React from 'react';
 import { useEffect } from "react";
 const Navbar = () => {
     useEffect(() => {
-        const navbar_menu = document.getElementById('navbar_menu');
-        const navbar_collapse = new Collapse(navbar_menu);
+        const navbar_menu_layer = document.getElementById('navbar_menu_layer');
+        const navbar_menu_content = document.getElementById('navbar_menu_content');
+        const navbar_collapse = new Collapse(navbar_menu_layer);
         const navbar_collapse_btns = document.querySelectorAll('.navbar_collapse_btn');
         document.getElementById('navbar_expand_btn').addEventListener('click', () => {
             navbar_collapse.expand();
+            navbar_menu_content.style.transform = 'translateX(0px)'
         });
         navbar_collapse_btns.forEach((btn) => {
             btn.addEventListener('click', () => {
                 navbar_collapse.collapse();
-                // navbar_collapse.style.left= '0px';
+                navbar_menu_content.style.transform = 'translateX(-100%)'
             });
         });
     }, []);
@@ -32,22 +34,23 @@ const Navbar = () => {
                     <h1 className=' font-sorts_mill_goudy flex w-full justify-center text-center'><span className='text-[7vw] sm:text-[4vw]'>Penelope</span></h1>
                 </div>
 
-                <div id="navbar_menu" className='hidden'>
+                <div id="navbar_menu_layer" className='hidden'>
                     <div className='navbar_collapse_btn absolute top-0 left-0 h-dvh w-full bg-[rgba(230,230,230,0.6)]'></div>
-                    <div className='navbar_collapse_btn bg-white absolute top-0 w-[calc(100vw-25px)] h-dvh  px-[4vw]'>
-                        <div className='flex w-full justify-end py-[2vw]'>
-                            <button type='button' className='navbar_collapse_btn p-[4vw]'>
-                                <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="m3 3 8.485 8.485m0-8.485L3 11.485" stroke="currentColor" strokeWidth="1.6" strokeLinecap="square"></path></svg>
-                            </button>
-                        </div>
-                        <div className='bg-[rgb(229,231,235)] h-[1px]'></div>
-                        <ul className='flex flex-col text-[20px] py-[3vw]'>
-                            <li><a href='#' className='nav_link block py-[3vw]'>About</a></li>
-                            <li><a href='#/webdesign' className='nav_link block py-[3vw]'>Web Design</a></li>
-                            <li><a href='#/photography' className='nav_link block py-[3vw]'>Photography</a></li>
-                            <li><a href='#/graphicdesign' className='nav_link block py-[3vw]'>Graphic Design</a></li>
-                        </ul>
+
+                </div>
+                <div id="navbar_menu_content" className='navbar_collapse_btn transition-transform duration-300 ease-in-out bg-white absolute left-0 top-0 w-[calc(100vw-25px)] h-dvh  px-[4vw]' style={{ transform: 'translateX(-100%)' }}>
+                    <div className='flex w-full justify-end py-[2vw]'>
+                        <button type='button' className='navbar_collapse_btn p-[4vw]'>
+                            <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="m3 3 8.485 8.485m0-8.485L3 11.485" stroke="currentColor" strokeWidth="1.6" strokeLinecap="square"></path></svg>
+                        </button>
                     </div>
+                    <div className='bg-[rgb(229,231,235)] h-[1px]'></div>
+                    <ul className='flex flex-col text-[20px] py-[3vw]'>
+                        <li><a href='#' className='nav_link block py-[3vw]'>About</a></li>
+                        <li><a href='#/webdesign' className='nav_link block py-[3vw]'>Web Design</a></li>
+                        <li><a href='#/photography' className='nav_link block py-[3vw]'>Photography</a></li>
+                        <li><a href='#/graphicdesign' className='nav_link block py-[3vw]'>Graphic Design</a></li>
+                    </ul>
                 </div>
             </nav>
 
