@@ -19,7 +19,7 @@ const Navbar = () => {
     }, []);
     return (
         <>
-            <nav id="pc_navbar" className='hidden md:flex font-sorts_mill_goudy fixed top-0 left-0 w-full justify-between items-center p-[1.5vw_4vw]'>
+            <nav id="pc_navbar" className='hidden md:flex font-sorts_mill_goudy fixed z-10 top-0 left-0 w-full justify-between items-center p-[1.5vw_4vw]'>
                 <h1 className='flex'><span className='md:text-[5vw] lg:text-[4vw] xl:text-[3.5vw]'>Penelope</span></h1>
                 <ul className='flex flex-row md:gap-[3vw] lg:gap-[2.5vw] xl:gap-[2vw] md:text-[2.75vw] lg:text-[2vw] xl:text-[1.7vw]'>
                     <li><a href="#" className='nav_link'>About</a></li>

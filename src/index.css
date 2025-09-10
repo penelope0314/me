@@ -67,3 +67,13 @@ button:focus-visible {
     background-color: #faf9f4;
   }
 }
+
+.at_block{
+  opacity: 0;
+  transform: translateY(10%);
+  transition: 0.6s ease;
+}
+.at_block.show{
+  opacity: 1;
+  transform: translateY(0px);
+}
