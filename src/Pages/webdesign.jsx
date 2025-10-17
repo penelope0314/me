@@ -52,7 +52,7 @@ export default function Photography() {
                 <div className="at_block">
                     <img src={imageList[3]} alt={`圖片 3`} loading="lazy" className="block w-full sm:rounded-[1vw]" />
                     <div className="mt-[5vw] sm:mt-[2vw] xl:text-[1.3vw]">
-                        <h3 className="font-bold mb-[10px] md:mb-[1vw] text-[20px] xl:text-[1.6vw]">直錄播系統</h3>
+                        <h3 className="font-bold mb-[10px] md:mb-[1vw] text-[20px] xl:text-[1.6vw]">產品DM</h3>
                         <div>產品DM</div>
                         <div>Adobe Illustrator</div>
                     </div>
