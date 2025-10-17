@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from "react";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     useEffect(() => {
         const navbar_menu_layer = document.getElementById('navbar_menu_layer');
@@ -22,8 +23,10 @@ const Navbar = () => {
             <nav id="pc_navbar" className='hidden md:flex font-sorts_mill_goudy fixed z-10 top-0 left-0 w-full justify-between items-center p-[1.5vw_4vw]'>
                 <h1 className='flex'><span className='md:text-[5vw] lg:text-[4vw] xl:text-[3.5vw]'>Penelope</span></h1>
                 <ul className='flex flex-row md:gap-[3vw] lg:gap-[2.5vw] xl:gap-[2vw] md:text-[2.75vw] lg:text-[2vw] xl:text-[1.7vw]'>
-                    <li><a href="#" className='nav_link'>About</a></li>
-                    <li><a href="#/portfolio" className='nav_link'>Portfolio</a></li>
+                    <li><Link to="./home" className='nav_link'>About</Link></li>
+                    <li><Link to="./webdesign" className='nav_link'>Design</Link></li>
+                    <li><Link to="./ootd" className='nav_link'>Photo</Link></li>
+                    {/* <li><a href="#/portfolio" className='nav_link'>Portfolio</a></li> */}
                 </ul>
             </nav>
             <nav className='block md:hidden fixed top-0 left-0 w-lvw bg-white z-10'>
@@ -47,9 +50,9 @@ const Navbar = () => {
                     <div className='bg-[rgb(229,231,235)] h-[1px]'></div>
                     <ul className='flex flex-col text-[20px] py-[3vw]'>
                         <li><a href='#' className='nav_link block py-[3vw]'>About</a></li>
-                        <li><a href='#/webdesign' className='nav_link block py-[3vw]'>Web Design</a></li>
-                        <li><a href='#/photography' className='nav_link block py-[3vw]'>Photography</a></li>
-                        <li><a href='#/graphicdesign' className='nav_link block py-[3vw]'>Graphic Design</a></li>
+                        <li><a href='#/webdesign' className='nav_link block py-[3vw]'>Design</a></li>
+                        <li><a href='#/ootd' className='nav_link block py-[3vw]'>Photo</a></li>
+                        {/* <li><a href='#/graphicdesign' className='nav_link block py-[3vw]'>Graphic Design</a></li> */}
                     </ul>
                 </div>
             </nav>

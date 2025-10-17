@@ -23,7 +23,7 @@ export default function Photography() {
     }, []);
     return (
         <>
-            <PageTitle text="WEB DESIGN" />
+            <PageTitle text="DESIGN" />
             <div className="flex flex-col mx-auto text-center gap-y-[20vw] sm:gap-y-[10vw] md:gap-y-[7.5vw] lg:gap-y-[6vw] xl:gap-y-[5vw] p-[2vw_0vw] sm:p-[2vw_4vw] w-full sm:w-3/4">
                 <div className="at_block">
                     <img src={imageList[0]} alt={`圖片 0`} loading="lazy" className="block w-full sm:rounded-[1vw]" />

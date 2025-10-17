@@ -20,11 +20,30 @@
   height: 4px;
   background-color: black;
 }
-.nav_link:hover::after{
+#pc_navbar .nav_link:hover::after{
   content: '';
   width: 100%;
   transition: .5s;
 }
+
+.tab_btn{
+  padding: 4px 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  color: #000;
+}
+
+.tab_btn:hover{
+  color: #000;
+  background-color: rgba(0,0,0,.1);
+  transition: .5s;
+}
+
+.tab_btn.active{
+  background-color: #000;
+  color: #fff;
+}
+
 .portfolio_item{
   position: relative;
   display: flex;

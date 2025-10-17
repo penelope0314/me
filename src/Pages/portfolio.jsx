@@ -12,7 +12,9 @@ export default function Portfolio() {
                 </div>
                 <div className='portfolio_item flex-col-reverse gap-y-[1vw]'>
                     <a href="#/photography"></a>
-                    <div className='aspect-3/4 bg-radial-[circle,rgba(255,255,247,1)_0%,rgba(220,220,220,1)_100%]'></div>
+                    <div className='relative aspect-3/4 bg-center bg-radial-[circle,rgba(255,255,247,1)_0%,rgba(220,220,220,1)_100%]'>
+                        <img src='/src/assets/img/portfolio/photography2.png' className="absolute top-0 left-0 object-center w-full" />
+                    </div>
                     <h3>Photography</h3>
                 </div>
                 <div className='portfolio_item flex-col gap-y-[1vw]'>
