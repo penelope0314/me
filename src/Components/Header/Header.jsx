@@ -22,7 +22,7 @@ const Navbar = () => {
         <>
             <nav id="pc_navbar" className='hidden md:flex font-sorts_mill_goudy fixed z-10 top-0 left-0 w-full justify-between items-center p-[1.5vw_4vw]'>
                 <h1 className='flex'><span className='md:text-[5vw] lg:text-[4vw] xl:text-[3.5vw]'>Penelope</span></h1>
-                <ul className='bg-white flex flex-row md:gap-[3vw] lg:gap-[2.5vw] xl:gap-[2vw] md:text-[2.75vw] lg:text-[2vw] xl:text-[1.7vw]'>
+                <ul className='bg-amber-400 flex flex-row md:gap-[3vw] lg:gap-[2.5vw] xl:gap-[2vw] md:text-[2.75vw] lg:text-[2vw] xl:text-[1.7vw]'>
                     <li><Link to="./home" className='nav_link'>About</Link></li>
                     <li><Link to="./webdesign" className='nav_link'>Design</Link></li>
                     <li><Link to="./ootd" className='nav_link'>Photo</Link></li>
