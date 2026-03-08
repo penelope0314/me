@@ -48,7 +48,7 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className='bg-[rgb(229,231,235)] h-[1px]'></div>
-                    <ul className='flex flex-col text-[20px] py-[3vw]'>
+                    <ul className='flex flex-col text-[20px] py-[3vw] bg-white'>
                         <li><a href='#' className='nav_link block py-[3vw]'>About</a></li>
                         <li><a href='#/webdesign' className='nav_link block py-[3vw]'>Design</a></li>
                         <li><a href='#/ootd' className='nav_link block py-[3vw]'>Photo</a></li>
