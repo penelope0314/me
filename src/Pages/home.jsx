@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useEffect } from 'react';
 import PageTitle from "../Components/PageTitle/PageTitle";
+import avatar from '../assets/img/home/20250904_7.jpg';
+import name from '../assets/img/home/name.svg';
+
+
 export default function Home() {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -24,7 +28,7 @@ export default function Home() {
             <div>
                 <div className="relative sm:grid grid-cols-2 lg:grid-cols-3 w-full sm:mb-[10vw]">
                     <div className="at_blockappear animation_delay_50 block aspect-square sm:aspect-3/4 sm:w-[50vw] md:w-[40vw] xl:w-auto">
-                        <img src={'/src/assets/img/home/20250904_7.jpg'} alt={`自己`} loading="lazy" className=" w-full h-full object-cover object-[50%_25%] sm:object-center" />
+                        <img src={avatar} alt={`自己`} loading="lazy" className=" w-full h-full object-cover object-[50%_25%] sm:object-center" />
                     </div>
 
                     <div className="bg-[#e2e0d8] at_blockappear animation_delay_50 -z-10 absolute w-full lg:w-[85%] sm:h-full"></div>
@@ -38,7 +42,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="hidden sm:block absolute bottom-0 w-full t_blockup translate-y-1/2">
-                        <img src={'/src/assets/img/home/name.svg'} alt={`名字`} loading="lazy" className="w-full max-w-lvw overflow-hidden" />
+                        <img src={name} alt={`名字`} loading="lazy" className="w-full max-w-lvw overflow-hidden" />
                     </div>
                 </div>
                 <div className="relative p-[8vw_0vw] sm:p-[2vw_4vw] w-full md:w-5/6 xl:w-3/4 m-auto">
