@@ -6,7 +6,7 @@ const imageList = Object.values(images).map((mod) => mod.default)
 export default function Substance() {
     return (
         <>
-            <PageTitle text="PHOTO" />
+            <PageTitle text="Photo" />
             <div className="flex flex-row justify-center gap-[14px] mb-[20px]">
                 <Link to="../ootd" className="tab_btn">OOTD</Link>
                 <Link to="../object" className="tab_btn active">Object</Link>

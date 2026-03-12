@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Header from "./Components/Header/Header"
+import Footer from "./Components/Footer/Footer"
 import Home from './Pages/home'
-import Portfolio from './Pages/portfolio'
-import Webdesign from './Pages/webdesign'
-import Ootd from './Pages/ootd'
-import Object from './Pages/object'
+import Design from './Pages/design'
+import Photography from './Pages/photography'
 
 function App() {
   return (
@@ -15,11 +14,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/webdesign" element={<Webdesign />} />
-        <Route path="/ootd" element={<Ootd />} />
-        <Route path="/object" element={<Object />} />
+        <Route path="/design" element={<Design />} />
+        <Route path="/photography" element={<Photography />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }

@@ -1,64 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 @import "tailwindcss";
-#root{
+
+#root {
   width: 100vw;
   min-height: 100dvh;
-}
-.nav_link{
-  position: relative;
-  color: black;
-}
-.nav_link:hover{
-  color: black;
-}
-#pc_navbar .nav_link::after{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background-color: black;
-}
-#pc_navbar .nav_link:hover::after{
-  content: '';
-  width: 100%;
-  transition: .5s;
+  letter-spacing: 0.05em;
+  color: #333;
 }
 
-.tab_btn{
+.at_blockappear {
+  opacity: 0;
+  animation-name: blockappear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.at_blockup {
+  opacity: 0;
+  animation-name: blockup;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+.text_vertical {
+  writing-mode: vertical-rl;
+}
+.text_vertical_sm {
+    writing-mode: initial;
+  }
+
+@media(min-width: 640px) {
+  .text_vertical_sm {
+    writing-mode: vertical-rl;
+  }
+}
+
+.nav_link {
+  color: #333;
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+.nav_link:hover {
+  color: #999;
+
+}
+
+.tab_btn {
   padding: 4px 20px;
   border: 1px solid #000;
   border-radius: 20px;
   color: #000;
 }
 
-.tab_btn:hover{
+.tab_btn:hover {
   color: #000;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0, 0, 0, .1);
   transition: .5s;
 }
 
-.tab_btn.active{
+.tab_btn.active {
   background-color: #000;
   color: #fff;
 }
 
-.portfolio_item{
+.portfolio_item {
   position: relative;
   display: flex;
 }
-.portfolio_item div{
+
+.portfolio_item div {
   border-radius: 1vw;
 }
-.portfolio_item:hover div{
+
+.portfolio_item:hover div {
   transform: scale(1.05);
   transition: 1s;
 }
-.portfolio_item:hover h3{
+
+.portfolio_item:hover h3 {
   color: black;
 }
-.portfolio_item a{
+
+.portfolio_item a {
   display: block;
   position: absolute;
   top: 0;
@@ -67,6 +95,82 @@
   height: 100%;
   z-index: 10;
 }
+
+.step_content {
+  position: relative;
+}
+
+.step_content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #111;
+}
+
+
 @theme {
   --font-sorts_mill_goudy: Sorts Mill Goudy, serif;
+  --font-lato: Lato, sans-serif;
+  --font-noto_sans_tc: Noto Sans TC, sans-serif;
+  --font-noto_serif_tc: Noto Serif TC, serif;
+}
+
+@keyframes blockappear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blockup {
+  0% {
+    opacity: 0;
+    transform: translateY(1vw);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0vw);
+  }
+}
+
+
+@layer utilities {
+  .animation_delay_50 {
+    animation-delay: 50ms;
+  }
+
+  .animation_delay_500 {
+    animation-delay: 500ms;
+  }
+
+  .animation_delay_750 {
+    animation-delay: 750ms;
+  }
+
+  .animation_delay_1000 {
+    animation-delay: 1s;
+  }
+
+  .animation_delay_1250 {
+    animation-delay: 1.25s;
+  }
+
+  .animation_delay_1500 {
+    animation-delay: 1.5s;
+  }
+
+  .animation_delay_1750 {
+    animation-delay: 1.75s;
+  }
+
+  .animation_delay_2000 {
+    animation-delay: 2s;
+  }
 }
